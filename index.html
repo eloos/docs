@@ -57,7 +57,7 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="committee/product/">Product</a>
+    <a href="committee/product/">Product Committee</a>
 </li>
                         </ul>
                     </li>
@@ -99,12 +99,13 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#peeringdb">PeeringDB</a></li>
-            <li><a href="#quick-start">Quick start</a></li>
+            <li><a href="#getting-help">Getting help</a></li>
             <li><a href="#mailing-lists">Mailing lists</a></li>
+            <li><a href="#quick-start">Quick start</a></li>
             <li><a href="#guides">Guides</a></li>
             <li><a href="#presentations">Presentations</a></li>
             <li><a href="#tools">Tools</a></li>
-            <li><a href="#beta-development-and-reporting-issues">Beta development and reporting issues</a></li>
+            <li><a href="#beta-development">Beta development</a></li>
             <li><a href="#historical-data">Historical data</a></li>
             <li><a href="#how-you-can-help">How you can help</a></li>
     </ul>
@@ -112,15 +113,18 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="peeringdb">PeeringDB</h1>
-<h2 id="quick-start">Quick start</h2>
-<p>PeeringDB is available at <a href="https://www.peeringdb.com/">https://www.peeringdb.com/</a> with self-describing API docs at <a href="https://www.peeringdb.com/apidocs/">https://www.peeringdb.com/apidocs/</a>.  More thorough docs are at <a href="api_specs/">API Specs</a>, but in a nutshell, just prepend the URL with <code>api/</code> to get that object in JSON.</p>
-<p>For example:<br />
-<a href="https://www.peeringdb.com/net/1">https://www.peeringdb.com/net/1</a><br />
-becomes:<br />
-<a href="https://www.peeringdb.com/api/net/1">https://www.peeringdb.com/api/net/1</a></p>
-<p>List all via API by taking the <code>id</code> off:<br />
-<a href="https://www.peeringdb.com/api/net">https://www.peeringdb.com/api/net</a></p>
-<p>Local database replication is accomplished with this <a href="https://github.com/peeringdb/peeringdb-py">command line tool</a>, please see the <a href="http://peeringdb.github.io/peeringdb-py/cli/#sync">documentation</a> for more information.</p>
+<h2 id="getting-help">Getting help</h2>
+<ul>
+<li>
+<p>Please log bugs and feature requests at <a href="https://github.com/peeringdb/peeringdb/issues">GitHub</a>.</p>
+</li>
+<li>
+<p>Several PeeringDB mailing lists are listed below.</p>
+</li>
+<li>
+<p>Questions, comments and everything else should go to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#112;&#101;&#101;&#114;&#105;&#110;&#103;&#100;&#98;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#112;&#101;&#101;&#114;&#105;&#110;&#103;&#100;&#98;&#46;&#99;&#111;&#109;</a>.</p>
+</li>
+</ul>
 <h2 id="mailing-lists">Mailing lists</h2>
 <p>We have changed the way in which PeeringDB will be announcing future enhancements, changes, maintenance windows, and other information. If you would like to be notified of certain events, or participate in certain discussions, please subscribe to one of the following email lists:</p>
 <ul>
@@ -145,35 +149,34 @@ becomes:<br />
 </li>
 </ul>
 <p>Our goal is to give you all the information you want, and no more.  Please subscribe to any of these lists you feel are appropriate, or none. You will still be able to use the database even if you are not subscribed to any lists.</p>
-<div id="fb-root"></div>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<p>
-<div class="fb-like" data-href="https://www.facebook.com/peeringdb" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-</p>
-
-<p>
-<a href="https://twitter.com/PeeringDB" class="twitter-follow-button" data-show-count="false">Follow @PeeringDB</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</p>
-
+<h2 id="quick-start">Quick start</h2>
+<p>PeeringDB is available at <a href="https://www.peeringdb.com/">https://www.peeringdb.com/</a> with self-describing API docs at <a href="https://www.peeringdb.com/apidocs/">https://www.peeringdb.com/apidocs/</a>.  More thorough docs are at <a href="api_specs/">API Specs</a>, but in a nutshell, just prepend the URL with <code>api/</code> to get that object in JSON.</p>
+<p>For example:<br />
+<a href="https://www.peeringdb.com/net/1">https://www.peeringdb.com/net/1</a><br />
+becomes:<br />
+<a href="https://www.peeringdb.com/api/net/1">https://www.peeringdb.com/api/net/1</a></p>
+<p>List all via API by taking the <code>id</code> off:<br />
+<a href="https://www.peeringdb.com/api/net">https://www.peeringdb.com/api/net</a></p>
+<p>Local database replication is accomplished with this <a href="https://github.com/peeringdb/peeringdb-py">command line tool</a>, please see the <a href="http://peeringdb.github.io/peeringdb-py/cli/#sync">documentation</a> for more information.</p>
 <h2 id="guides">Guides</h2>
 <ul>
 <li>[es] <a href="./guide/guia_PeeringDB.pdf">Guía corta para uso de peeringdb.com</a> - Fabián Mejía</li>
 </ul>
 <h2 id="presentations">Presentations</h2>
+<h4 id="2017">2017</h4>
 <ul>
-<li><a href="./presentation/20170426-gpf-12.0-hughes-peeringdb.pdf">PeeringDB Update</a> at <a href="https://www.peeringforum.com/gpf-12-0-peeringdb-update/">Global Peering Forum 12.0</a>, New York, US - April 26, 2017 - Aaron Huges</li>
+<li><a href="./presentation/20170622-decix-technical-meeting-nipper-v2.pdf">More benefits from PeeringDB</a> at <a href="https://www.de-cix.net/en/news-events/events/de-cix-technical-meeting">DE-CIX Technical Meeting</a>, Frankfurt, DE - June 22, 2017 - Arnold Nipper</li>
+<li><a href="./presentation/20170605-nanog-70-hughes-peeringdb.pdf">PeeringDB Update</a> at <a href="https://www.nanog.org/meetings/nanog70/home">NANOG 70</a>, Bellevue, WA, US - June 5, 2017 - Aaron Hughes</li>
+<li><a href="./presentation/20170602-bosnog-mcmanus.pdf">PeeringDB Update</a> at <a href="https://www.meetup.com/BOSNOG-The-Boston-Network-Operators-Group/events/239045101/">BOSNOG Meeting &amp; IX Peering Forum</a>, Cambridge, MA, US - June 2, 2017 - Stephen McManus</li>
+<li><a href="./presentation/gter43-peeringdb.20170522.pdf">Orientações no preenchimento de participantes do IX.br</a> at <a href="http://gtergts.nic.br/">GTER 43</a>, Foz do Iguaçu, BR - May 25, 2017 - Julimar Lunguinho Mendes</li>
+<li><a href="./presentation/20170523-ENOG13-Nipper.pdf">PeeringDB Update</a> at <a href="https://www.enog.org/enog-13/">ENOG 13.0</a>, Saint Petersburg, RU - May 23, 2017 - Arnold Nipper</li>
+<li><a href="./presentation/20170426-gpf-12.0-hughes-peeringdb.pdf">PeeringDB Update</a> at <a href="https://www.peeringforum.com/gpf-12-0-peeringdb-update/">Global Peering Forum 12.0</a>, New York, NY, US - April 26, 2017 - Aaron Huges</li>
 <li><a href="./presentation/20170406-ESNOG19-Nipper.pdf">PeeringDB</a> at <a href="http://www.esnog.net/2017/01/goreesnog-reunion-19-csuccatnix-barcelona/">GORE/ESNOG Reunion 19</a>, Barcelona, ES - April 6, 2017 - Arnold Nipper</li>
 <li><a href="./presentation/20170323-CEE-Peeringdays-Nipper.pdf">PeeringDB</a> at <a href="http://www.peeringdays.eu/">CEE Peering Days 2017</a>, Ljubljana, SL - March 23, 2017 - Arnold Nipper</li>
 <li><a href="./presentation/20170228-Apricot2017-Nipper.pdf">PeeringDB 2.0</a> at <a href="https://2017.apricot.net/">APRICOT 2017</a>, Ho Chi Minh City, VN - February 28, 2017 - Arnold Nipper</li>
+</ul>
+<h4 id="2016">2016</h4>
+<ul>
 <li><a href="./presentation/2016-11-23-kikeautumn16-2.pdf">PeeringDB</a> at <a href="http://kikeevents.com/en/category/19-kike-conference/">19 KIKE Conference</a>, Serock, PL - November 23, 2016 - Robert Jakub</li>
 <li><a href="./presentation/20161103-ITNOG2-Nipper-peeringdb.pdf">PeeringDB 2.0</a> at <a href="http://www.itnog.it/itnog2/">ITNOG2</a>, Bologna, IT - November 3, 2016 - Arnold Nipper</li>
 <li><a href="./presentation/20160919-epf11-Loos-peeringdb.pdf">PeeringDB Product Committee Charter Survey</a> at <a href="https://www.peering-forum.eu/">EPF 11</a>, Sofia, BG - September 20, 2016 - Eric Loos</li>
@@ -182,12 +185,12 @@ becomes:<br />
 <li><a href="./presentation/2016-08-29_afix2016-Nipper-peeringdb.pdf">PeeringDB 2.0 for IXPs</a> at <a href="http://www.af-ix.net/?q=resources/2016/08/afix-2016-meeting-agenda">AFIX 2016</a>, Dar es Salaam, TZ - August 29, 2016 - Arnold Nipper</li>
 <li><a href="./presentation/2016-06-07_PeeringDB-2.0_ENOG11.pdf">PeeringDB 2.0</a> at <a href="https://www.enog.org/meetings/enog-11/">ENOG 11</a>, Moscow, RU - June 7, 2016 - Arnold Nipper</li>
 <li><a href="./presentation/2016-05-25_81-ripe-72-peeringdb.pdf">PeeringDB 2.0</a> at <a href="https://ripe72.ripe.net/">RIPE 72</a>, Copenhagen, DK - May 25, 2016 - Greg Hankins</li>
-<li><a href="./presentation/2016-05-12_chi-nog-06-peeringdb.pdf">PeeringDB 2.0</a> at <a href="http://chinog.org/meetings/chi-nog-06/">CHI-NOG 06</a>, Chicago, US - May 12, 2016 - Matt Griswold</li>
+<li><a href="./presentation/2016-05-12_chi-nog-06-peeringdb.pdf">PeeringDB 2.0</a> at <a href="http://chinog.org/meetings/chi-nog-06/">CHI-NOG 06</a>, Chicago, IL, US - May 12, 2016 - Matt Griswold</li>
 <li><a href="./presentation/2016-05-12_PeeringDB-2.0_GTER_41.pdf">PeeringDB 2.0 e o Cenário Brasileiro</a> and <a href="./presentation/2016-05-12_IX.br_PeeringDB_Guide.pdf">IX.br Guia de cadastro de informações de ASNs no PeeringDB</a> at <a href="http://gtergts.nic.br/">GTER 41</a>, Uberlândia, BR - May 12, 2016 - Eduardo Ascenço Reis</li>
 <li><a href="./presentation/2016-04-26_PeeringDB_28th_Euro-IX_Forum.pdf">PeeringDB 2.0 for IXPs</a> at <a href="https://www.euro-ix.net/">28th Euro-IX Forum</a>, Luxembourg, LU - April 26, 2016 - Greg Hankins / Arnold Nipper</li>
 <li><a href="https://www.ripe.net/participate/meetings/regional-meetings/see-5">RIPE SEE 5</a>, Tirana, AL - April 19, 2016 - Arnold Nipper</li>
 <li><a href="./presentation/2016-04-21_PeeringDB_UKNOF34.pdf">PeeringDB 2.0</a> at <a href="https://indico.uknof.org.uk/conferenceDisplay.py?confId=36">UKNOF34</a>, Manchester, UK - April 21, 2016 - Greg Hankins</li>
-<li><a href="./presentation/2016-04-13_PeeringTrack-PDB-Update-GPF11.pdf">PeeringDB Update</a> at <a href="https://www.peeringforum.com/">GPF 11</a>, Los Angeles, US - April 13, 2016 - Aaron Hughes</li>
+<li><a href="./presentation/2016-04-13_PeeringTrack-PDB-Update-GPF11.pdf">PeeringDB Update</a> at <a href="https://www.peeringforum.com/">GPF 11</a>, Los Angeles, CA, US - April 13, 2016 - Aaron Hughes</li>
 <li><a href="http://www.netnod.se/netnod-spring-meeting-2016">NetNod</a>, Stockholm, SE - March 17, 2016 - Job Snijders</li>
 <li><a href="http://www.dknog.dk/events/dknog6/">DKNOG6</a>, Copenhagen, DK - March 10, 2016 - Job Snijders</li>
 <li><a href="./presentation/PeeringTrack-PDB-Update-20160205.pdf">PeeringDB Update</a> - Aaron Hughes<ul>
@@ -196,6 +199,9 @@ becomes:<br />
 </ul>
 </li>
 <li><a href="./presentation/PeeringDB_Version_2-Coding_Introduction.pdf">PeeringDB Version 2 Coding Introduction</a> at <a href="http://nanog.org/meetings/nanog66/home">NANOG 66</a>, San Diego, CA, US - February 8, 2016 - Matt Griswold</li>
+</ul>
+<h4 id="2015">2015</h4>
+<ul>
 <li><a href="./presentation/PeeringDB_Version_2-Brazil.pdf">PeeringDB Version 2 Brazil</a> - Matt Griswold / Greg Hankins<ul>
 <li><a href="http://ix.br/pttforum/9/index-en.html">IX (PTT) Fórum 9</a>, São Paulo, BR - December 8, 2015 - Greg Hankins</li>
 </ul>
@@ -224,19 +230,13 @@ becomes:<br />
 <p><a href="https://labs.ripe.net/Members/massimo_candela/tracemon-traceroute-visualisation-network-debugging-tool">TraceMON</a> is a tool for visualizing a network topology generated by traceroutes that provides one-click access to IXP and network information.  It also displays PeeringDB information and allows the user to update their record.  RIPE Atlas users can access it by selecting a <a href="https://atlas.ripe.net/measurements/?search=&amp;status=&amp;af=&amp;kind=2%2C4&amp;age=#!tab-public">traceroute measurement</a> and clicking on the TraceMON tab.</p>
 </li>
 </ul>
-<h2 id="beta-development-and-reporting-issues">Beta development and reporting issues</h2>
+<h2 id="beta-development">Beta development</h2>
 <ul>
 <li>
 <p>The <a href="https://beta.peeringdb.com/">PeeringDB beta server</a> is running the latest beta software version, with full access over HTTP and the API.  Note that changes made to the beta database are local to the beta server only, and are not reflected on the production servers.</p>
 </li>
 <li>
 <p>The <a href="https://beta.peeringdb.com/changes">latest changes to PeeringDB</a> automagically redirects to the list of issues on PeeringDB's GitHub repository that document all of the changes in the current beta version.</p>
-</li>
-<li>
-<p>Please log bugs and feature requests at <a href="https://github.com/peeringdb/peeringdb/issues">GitHub</a>.</p>
-</li>
-<li>
-<p>Questions, comments and everything else should go to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#112;&#101;&#101;&#114;&#105;&#110;&#103;&#100;&#98;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#112;&#101;&#101;&#114;&#105;&#110;&#103;&#100;&#98;&#46;&#99;&#111;&#109;</a>.</p>
 </li>
 </ul>
 <h2 id="historical-data">Historical data</h2>
@@ -259,15 +259,14 @@ becomes:<br />
 <p>Improve these docs</p>
 </li>
 </ul>
-<p>Thanks for the testing/feedback, we look forward to hearing from you!</p></div>
+<p>Thanks for your feedback, we look forward to hearing from you!</p></div>
         </div>
 
         <footer class="col-md-12">
-<p>Follow us on Social Media:<br>
-  <a target='_blank' href='https://twitter.com/PeeringDB'><img src='/img/twitter.png'></a>
-  <a target='_blank' href='https://www.facebook.com/peeringdb/'><img src='/img/facebook.png'></a>
-  <a target='_blank' href='https://www.linkedin.com/company/peeringdb'><img src='/img/linkedin.png'></a>
-</p>
+ <a target='_blank' href='https://github.com/peeringdb/peeringdb/issues'><img style='height:50px' src='/img/github.png'></a>
+ <a target='_blank' href='https://twitter.com/PeeringDB'><img style='height:50px' src='/img/twitter.png'></a>
+ <a target='_blank' href='https://www.facebook.com/peeringdb'><img style='height:50px' src='/img/facebook.png'></a>
+ <a target='_blank' href='https://www.linkedin.com/company/peeringdb'><img style='height:50px' src='/img/linkedin.png'></a>
 
         </footer>
         <script>var base_url = '.';</script>
@@ -301,6 +300,6 @@ becomes:<br />
 </html>
 
 <!--
-MkDocs version : 0.16.3
-Build Date UTC : 2017-05-15 18:39:25
+MkDocs version : 0.16.2
+Build Date UTC : 2017-07-05 19:03:05
 -->
