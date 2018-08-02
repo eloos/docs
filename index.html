@@ -61,11 +61,26 @@
 </li>
                         </ul>
                     </li>
-                    <li >
-                        <a href="faq/">FAQ</a>
-                    </li>
-                    <li >
-                        <a href="api_specs/">API Specs</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="api_specs/">API Specs</a>
+</li>
+                            
+<li >
+    <a href="oauth/">OAuth</a>
+</li>
+                            
+<li >
+    <a href="translation/">Translations</a>
+</li>
+                            
+<li >
+    <a href="faq/">FAQ</a>
+</li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -105,7 +120,9 @@
             <li><a href="#guides">Guides</a></li>
             <li><a href="#presentations">Presentations</a></li>
             <li><a href="#tools">Tools</a></li>
+            <li><a href="#open-source">Open Source</a></li>
             <li><a href="#beta-development">Beta development</a></li>
+            <li><a href="#thank-you">Thank you!</a></li>
             <li><a href="#historical-data">Historical data</a></li>
             <li><a href="#how-you-can-help">How you can help</a></li>
     </ul>
@@ -161,8 +178,24 @@ becomes:<br />
 <h2 id="guides">Guides</h2>
 <ul>
 <li>[es] <a href="./guide/guia_PeeringDB.pdf">Guía corta para uso de peeringdb.com</a> - Fabián Mejía</li>
+<li>[pt-BR] <a href="./guide/PeeringDB_Cadastro_de_Facilities.pdf">Guia de cadastro de informações de Facilities no PeeringDB</a> - Julimar Lunguinho Mendes / Equipe de Engenharia</li>
 </ul>
 <h2 id="presentations">Presentations</h2>
+<h4 id="2018">2018</h4>
+<ul>
+<li><a href="./presentation/20180622-NEPF-Gilmore.pdf">PeeringDB: What is it, how to and benefits</a> at <a href="http://nepeeringforum.org/">New England Peering Forum 2018</a>, Cambridge, MA, US - June 22, 2018 - Patrick W. Gilmore</li>
+<li><a href="./presentation/20180619-SEE7-Lightning-Nipper.pdf">PeeringDB Update</a> at <a href="https://www.ripe.net/participate/meetings/regional-meetings/see/see-7">SEE 7</a>, Timișoara, R0 - June 18, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180605-ENOG15-Nipper-V2.pdf">PeeringDB Update</a> at <a href="https://www.enog.org/enog-15/programme/agenda/">ENOG 15</a>, Moscow, RU - June 5, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180524-SwiNOG-33-Lightning-Nipper-V2.pdf">PeeringDB Update</a> at <a href="http://www.swinog.ch/meetings/swinog33/index.asp">SwiNOG 33</a>, Berne, CH - May 24, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/gter45-peeringdb.20180515.pdf">PeeringDB Update e cadastro de Facilities</a> at <a href="http://gtergts.nic.br/">GTER 45</a>, Florianópolis, BR - May 22, 2018 - Julimar Lunguinho Mendes (<a href="https://www.youtube.com/watch?v=W0hSdRr4UW0">video</a> start 1:08:29 and finish 1:20:14)</li>
+<li><a href="./presentation/20180516-RIPE76-Lightning-Nipper-V2.pdf">PeeringDB Update</a> at <a href="https://ripe76.ripe.net/programme/meeting-plan/connect-wg/">RIPE 76 Connet Working Group</a>, Marseille, FR - May 16, 2018 - Arnold Nipper (<a href="https://ripe76.ripe.net/archives/video/49">video</a>)</li>
+<li><a href="./presentation/20180508-AIS2018-Nipper-v2.pdf">PeeringDB Update</a> at <a href="https://internetsummitafrica.org/">African Internet Summit 2018</a>, Dakar, SN - May 8, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180309-DKNOG8-Lightning-Nipper.pdf">PeeringDB Update</a> at <a href="https://dknog8.dknog.dk/">DKNOG8</a>, Copenhagen, DK - March 9, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180307-CEE-Peering-Days-Lightning-Nipper.pdf">PeeringDB Update</a> at <a href="https://www.peeringdays.eu/programme.php">CEE Peering Days 2018</a>, Berlin, DE - March 7, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180226-Apricot2018-Nipper.pdf">Introduction to PeeringDB</a> at <a href="https://2018.apricot.net/program/schedule/#/day/8/peering-and-interconnection-ii-global">APRICOT 2018</a>, Kathmandu, NP - February 26, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180224-17th-APIX-Nipper.pdf">PeeringDB Update</a> at <a href="http://apix.asia/?page_id=75">APIX Meeting #17</a>, Kathmandu, NP - February 24, 2018 - Arnold Nipper</li>
+<li><a href="./presentation/20180208-Capacity-India-and-SAARC-Nipper.pdf">PeeringDB Introduction</a> at <a href="http://www.capacityconferences.com/India-Connect-Agenda">Capacity India &amp; SAARC 2018</a>, New Delhi, IN - February 8, 2018 - Arnold Nipper</li>
+</ul>
 <h4 id="2017">2017</h4>
 <ul>
 <li><a href="./presentation/20171114-alnof-sanghani.pdf">PeeringDB Update</a> at <a href="https://www.nix.cz/">NIX.cz Member Meering</a>, Prague, CZ - November 23, 2017 - Bijal Sanghani</li>
@@ -243,6 +276,9 @@ becomes:<br />
 <p><a href="https://labs.ripe.net/Members/massimo_candela/tracemon-traceroute-visualisation-network-debugging-tool">TraceMON</a> is a tool for visualizing a network topology generated by traceroutes that provides one-click access to IXP and network information.  It also displays PeeringDB information and allows the user to update their record.  RIPE Atlas users can access it by selecting a <a href="https://atlas.ripe.net/measurements/?search=&amp;status=&amp;af=&amp;kind=2%2C4&amp;age=#!tab-public">traceroute measurement</a> and clicking on the TraceMON tab.</p>
 </li>
 </ul>
+<h2 id="open-source">Open Source</h2>
+<h4 id="source-code-audit">Source code audit</h4>
+<p>PeeringDB commissioned a full audit of PeeringDB's source code in 2018. <a href="https://www.computest.nl/">Computest</a> (the auditor) prepared a <strong>Third Pary Memo</strong>, this memo provides a high level overview of the outcome of the source code audit. The report is available <a href="./gov/misc/2018-05-16_Computest_Source_Code_Audit_TPM.pdf">here</a>.</p>
 <h2 id="beta-development">Beta development</h2>
 <ul>
 <li>
@@ -251,6 +287,13 @@ becomes:<br />
 <li>
 <p>The <a href="https://beta.peeringdb.com/changes">latest changes to PeeringDB</a> automagically redirects to the list of issues on PeeringDB's GitHub repository that document all of the changes in the current beta version.</p>
 </li>
+</ul>
+<h2 id="thank-you">Thank you!</h2>
+<h3 id="translators">Translators</h3>
+<h4 id="pt">pt</h4>
+<ul>
+<li>Robert Philips (NTT Communications)</li>
+<li>Ligio Gomes (NTT Communications)</li>
 </ul>
 <h2 id="historical-data">Historical data</h2>
 <ul>
@@ -270,6 +313,9 @@ becomes:<br />
 </li>
 <li>
 <p>Improve these docs</p>
+</li>
+<li>
+<p>Add or improve a <a href="./translation/">translation</a></p>
 </li>
 </ul>
 <p>Thanks for your feedback, we look forward to hearing from you!</p></div>
@@ -313,6 +359,6 @@ becomes:<br />
 </html>
 
 <!--
-MkDocs version : 0.16.2
-Build Date UTC : 2018-03-14 15:44:37
+MkDocs version : 0.16.3
+Build Date UTC : 2018-08-02 19:55:07
 -->
